@@ -161,7 +161,7 @@ block content
 			});
 			// change fixed nav link color from rgba(44,44,44,0.4) to rgba(44,44,44,1)
 			$('a').on('click', function(e){
-				var target = $(e.target).attr('href');
+				var target = $(e.currentTarget).attr('href');
 				var links = ['#about', '#build', '#join'];
 				links.forEach(function(link){
 					$(link+ '-link').css('color', 'rgba(44,44,44,0.4)');
