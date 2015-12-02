@@ -1,7 +1,118 @@
 extends layout
 
 block content
-  .row
-    .cb-nav.col-xs-12
-        h2 Welcome to Colab Bloomington: A Colab Initiative
-        h4 This site is still in progress. Come back soon!
+	//- .row
+	//- 	.cb-nav.col-xs-12.hidden-xs
+	//- 		h2 Navbar
+	.row
+		.landing-main.col-xs-12
+			.landing-main-bg
+			img.landing-main-img.cb-img(src='/images/photo-1.png')
+			.landing-main-content
+				.container
+					.row.landing-main-nav
+						.col-sm-12.visible-xs.center-text
+							img(src='/images/logo-white.png')
+						.col-sm-3.hidden-xs
+							img(src='/images/logo-white.png')
+						.col-md-6.col-md-offset-3.col-sm-8.col-sm-offset-1.hidden-xs
+							ul
+								li
+									a(href="#about") About
+								li
+									a(href="#build") Build
+								li
+									a(href="#join") Join
+								li
+									a(href="#contact") Get in touch
+					.row
+						.col-sm-8.col-sm-offset-2.col-xs-10.col-xs-offset-1.center-text
+							.cb-title Hi, welcome to Colab Bloomington
+					.row
+						.col-sm-8.col-sm-offset-2.col-xs-10.col-xs-offset-1.center-text
+							.cb-title-sub This is what we do, this is who we are: Dobis PR, Dobis PR. We love what we do, we love who we are: Dobis PR, Dobis PR.
+					.row
+						.col-xs-12.center-text
+							a.cb-button(href="#contact") Get in touch
+					.down-arrow-wrapper.text-center
+						a.down-arrow(href="#about")
+							img.cb-img(src="/images/arrow@2x.png")
+							// For some reason retina is not working... investigate. (It is also being loaded before the images, if that matters...)
+	.row
+		#about.cb-section.col-xs-12
+			.container
+				.row
+					.col-sm-6.col-xs-12.center-text
+						img.section-img(src="/images/icon1.png")
+					.col-sm-6.col-xs-12
+						.cb-section-title It's great to meet you.
+						.cb-section-text We're Colab Bloomington, a local development shop and venture studio. We work with local businesses to solve simple problems while offering internships to our town's talented students.
+	.row
+		#build.cb-section.col-xs-12.cb-section-middle
+			.container
+				.row
+					.col-sm-6.col-sm-push-6.col-xs-12.center-text
+						img.section-img(src="/images/icon2.png")
+					.col-sm-6.col-sm-pull-6.col-xs-12
+						.cb-section-title Need a website? Let's build together.
+						.cb-section-text Whether your business needs a new Wordpress site or help with HTML & CSS, Colab Bloomington gets you on the right path. We believe in helping local businesses by working through our community and building great ideas.
+	.row
+		#join.cb-section.col-xs-12
+			.container
+				.row
+					.col-sm-6.col-xs-12.center-text
+						img.section-img(src="/images/icon3.png")
+					.col-sm-6.col-xs-12
+						.cb-section-title For real-world training, join the Colab family.
+						.cb-section-text Students will learn what it takes to be part of Colab's development and UX/UI teams through a hands-on internship. It's our hope that hard-working, creative individuals will establish their product development skillset here to eventually join us at our Los Angeles office.
+	.row
+		#contact.cb-section.col-xs-12.cb-contact
+			.cb-contact-filter
+			.container
+				.row
+					.col-xs-12.cb-contact-title.center-text Introduce yourself.
+				.form
+					.row
+						.col-xs-12
+							select.selectpicker.cb-input(multiple, title="What can Colab Bloomington do for you?", name="position")
+								option I want to hire Colab Bloomington
+								option I have a product I want to build with Colab Bloomington
+								option I want to work for Colab Bloomington
+								option I want an internship with Colab Bloomington
+								option I want to meet with Colab Bloomington
+						.col-sm-6.col-xs-12
+							input.cb-input(type="text", placeholder="Name", required)
+						.col-sm-6.col-xs-12
+							input.cb-input(type="email", placeholder="Email", required)
+						.col-xs-12
+							textarea.cb-input(rows="5", placeholder="How can Colab Bloomington help you?")
+					.row
+						.col-xs-12.center-text
+							a.cb-button.cb-button-contact(href="#contact") Submit
+	
+	.row
+		.col-xs-12.center-text
+			.cb-footer-text Built in class <i class="fa fa-heart"></i> IU
+	.row	
+		.col-xs-12.center-text.cb-footer-links
+			a(href)
+				span.fa-stack
+					i.fa.fa-circle-thin.fa-stack-2x
+					i.fa.fa-instagram.fa-stack-1x
+			a(href="https://www.twitter.com/colab_la")
+				span.fa-stack
+					i.fa.fa-circle-thin.fa-stack-2x
+					i.fa.fa-twitter.fa-stack-1x
+			a(href="https://www.facebook.com/colabbloomington")
+				span.fa-stack
+					i.fa.fa-circle-thin.fa-stack-2x
+					i.fa.fa-facebook.fa-stack-1x
+
+	script(src="/javascripts/bootstrap.min.js")
+	script(src="/javascripts/retina.min.js")
+	script
+		$(document).ready(function(){
+			// Do input work here
+		});
+
+
