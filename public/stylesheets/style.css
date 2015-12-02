@@ -113,7 +113,7 @@ a:active {
 }
 
 .landing-main-img {
-	min-height: 650px;
+	min-height: 600px;
 	max-height: 800px;
 	visibility: hidden;
 }
@@ -166,7 +166,7 @@ a:active {
 	line-height: 1.5;
 	font-size: 18px;
 	color: #fff;
-	padding-bottom: 6%;
+	padding-bottom: 48px;
 }
 
 .cb-title-sub a {
@@ -398,15 +398,30 @@ a:active {
 	}
 
 	.cb-section {
-		padding: 64px 16px;
+		padding: 32px 16px;
 	}
 @media only screen and (max-width:400px){
 	.cb-title {
 		font-size: 30px;
 	}
+
+	.cb-button {
+		font-size: 22px;
+	}
+
+	.cb-title-sub {
+		font-size: 16px;
+	}
+
 	.selectpicker,
 	.cb-contact input,
 	.cb-contact textarea {
 		font-size: 15px;
+	}
+}
+
+@media only screen and (max-width:358px){
+	.cb-title {
+		font-size: 26px;
 	}
 }
