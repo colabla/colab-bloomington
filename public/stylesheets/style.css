@@ -138,6 +138,11 @@ a:active {
 	padding-bottom: 6%;
 }
 
+.cb-title-sub a {
+	color: #F7D54A;
+	font-weight: 700;
+}
+
 .down-arrow-wrapper {
 	position: absolute;
 	bottom: 8%;
