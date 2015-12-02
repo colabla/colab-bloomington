@@ -52,6 +52,53 @@ a:active {
 	padding: 0 8px;
 }
 
+/* ************** */
+/* BEGIN MAIN NAV */
+/* ************** */
+
+.cb-fixed-nav {
+	position: fixed;
+	z-index: 2;
+	background-color: #fff;
+	border-bottom: 2px solid #E6DE9E;
+	top: -96px;
+	left: 0;
+	right: 0;
+	-webkit-transition: top 0.3s;
+	-moz-transition: top 0.3s;
+	transition: top 0.3s;
+}
+
+.cb-fixed-nav .landing-main-nav {
+	padding: 16px 0;
+}
+
+.cb-fixed-nav .landing-main-nav ul {
+	margin-bottom: 0;
+}
+
+.cb-fixed-nav .landing-main-nav ul > li {
+	padding-top: 0;
+}
+
+.cb-fixed-nav .landing-main-nav ul > li > a {
+	color: rgba(44,44,44,0.4);
+}
+
+/*.cb-fixed-nav .landing-main-nav ul > li.cb-button-li {
+	padding-top: 10
+}*/
+
+.cb-fixed-nav .landing-main-nav ul > li > a.cb-button {
+	padding: 16px 32px;
+	color: #fff;
+	background-color: rgba(77,219,162,1); 
+}
+
+/* ************ */
+/* END MAIN NAV */
+/* ************ */
+
 /* ****************** */
 /* BEGIN LANDING MAIN */
 /* ****************** */
@@ -93,10 +140,6 @@ a:active {
 	padding: 4% 0;
 }
 
-.landing-main-nav ul {
-
-}
-
 .landing-main-nav ul > li {
 	display: inline-block;
 	list-style-type: none;
@@ -133,8 +176,8 @@ a:active {
 
 .cb-button {
 	position: relative;
-	padding: 24px 40px;
-	font-size: 28px;
+	padding: 20px 40px;
+	font-size: 26px;
 	border: 2px solid #fff;
 	color: #fff;
 	display: inline-block;
@@ -180,6 +223,10 @@ a:active {
 /* END LANDING MAIN */
 /* **************** */
 
+/* ******************** */
+/* BEGIN LOWER SECTIONS */
+/* ******************** */
+
 .cb-section {
 	padding: 64px;	
 }
@@ -209,10 +256,6 @@ a:active {
 	background-color: rgba(249,247,235,1);
 }
 
-.cb-nav {
-	display: none;
-}
-
 .cb-contact {
 	position: relative;
 	background: url('/images/photo2.png');
@@ -232,6 +275,7 @@ a:active {
 
 .cb-button-contact {
 	width: 100%;
+	font-weight: 700;
 }
 
 .cb-input {
@@ -250,6 +294,10 @@ a:active {
 	font-weight: 700;
 	letter-spacing: -2px;
 }
+
+/* ****************** */
+/* END LOWER SECTIONS */
+/* ****************** */
 
 /* ****************************** */
 .btn {

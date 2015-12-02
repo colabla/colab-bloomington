@@ -1,9 +1,23 @@
 extends layout
 
 block content
-	//- .row
-	//- 	.cb-nav.col-xs-12.hidden-xs
-	//- 		h2 Navbar
+	.row.cb-fixed-nav.hidden-xs
+		.col-xs-12
+			.container
+				.row.landing-main-nav
+					.col-sm-3.hidden-xs
+						a(href="#")
+							img(src='/images/logo-dark.png')
+					.col-md-6.col-md-offset-2.col-sm-7.hidden-xs
+						ul
+							li
+								a#about-link(href="#about") About
+							li
+								a#build-link(href="#build") Build
+							li
+								a#join-link(href="#join") Join
+							li
+								a.cb-button(href="#contact") Get in touch
 	.row
 		.landing-main.col-xs-12
 			.landing-main-bg
@@ -119,19 +133,40 @@ block content
 	script(src="/javascripts/retina.min.js")
 	script
 		$(document).ready(function(){
+			var FIXED_NAV_HEIGHT = 96;
 			$(function() {
 				$('a[href*=#]:not([href=#])').click(function() {
-					if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+					if (true) {
 						var target = $(this.hash);
 						target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
 						if (target.length) {
 							$('html,body').animate({
-								scrollTop: (target.offset().top)
+								scrollTop: (target.offset().top - FIXED_NAV_HEIGHT)
 							}, 1000);
 							return false;
 						}
 					}
 				});
+			});
+			$(document).on('scroll', function(){
+				var dFromTop = $(document).scrollTop();
+				var landingHeight = $('.landing-main').height();
+				if(dFromTop >= (landingHeight - FIXED_NAV_HEIGHT)){
+					$('.cb-fixed-nav').css('top', 0)
+				} else {
+					$('.cb-fixed-nav').css('top', 0 - FIXED_NAV_HEIGHT);
+				}
+			});
+			// change fixed nav link color from rgba(44,44,44,0.4) to rgba(44,44,44,1)
+			$('a').on('click', function(e){
+				var target = $(e.target).attr('href');
+				var links = ['#about', '#build', '#join'];
+				links.forEach(function(link){
+					$(link+ '-link').css('color', 'rgba(44,44,44,0.4)');
+				})
+				if(links.indexOf(target)>=0){
+					$(target + '-link').css('color', 'rgba(44,44,44,1)');
+				}
 			});
 		});
 
