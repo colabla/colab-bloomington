@@ -46,9 +46,11 @@ block content
 						.col-sm-8.col-sm-offset-2.col-xs-10.col-xs-offset-1.center-text
 							.cb-title-sub
 								a(href="http://colab.la/", target="_blank") Colab
-								|  is an innovative venture studio based in Los Angeles. We have 
-								a(href="#build") advanced expertise 
-								| in web development, branding, UX/UI, and growth hacking. Colab Bloomington is our intiative to give 
+								|  is an innovative venture studio based in Los Angeles. 
+								span.hidden-xs We have 
+									a(href="#build") advanced expertise 
+									| in web development, branding, UX/UI, and growth hacking. 
+								| Colab Bloomington is our intiative to give 
 								a(href="#join") hands-on internships 
 								| to Indiana students. 
 								a(href="#contact") Come join us!
@@ -57,7 +59,7 @@ block content
 							a.cb-button(href="#contact") Get in touch
 					.down-arrow-wrapper.text-center
 						a.down-arrow(href="#about")
-							img.cb-img(src="/images/arrow@2x.png")
+							img.cb-img(src="/images/arrow.png")
 							// For some reason retina is not working... investigate. (It is also being loaded before the images, if that matters...)
 	.row
 		#about.cb-section.col-xs-12
@@ -133,7 +135,7 @@ block content
 	script(src="/javascripts/retina.min.js")
 	script
 		$(document).ready(function(){
-			var FIXED_NAV_HEIGHT = 96;
+			var FIXED_NAV_HEIGHT = $(document).width() < 768? 0 : 96;
 			$(function() {
 				$('a[href*=#]:not([href=#])').click(function() {
 					if (true) {

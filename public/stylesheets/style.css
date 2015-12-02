@@ -384,6 +384,11 @@ a:active {
 	color:rgba(114,114,114,0.5);
 }
 /* ****************************** */
+@media only screen and (max-width:991px){
+	.down-arrow-wrapper {
+		bottom: 32px;
+	}
+}
 
 @media only screen and (max-width:650px){
 	.selectpicker,
@@ -391,10 +396,17 @@ a:active {
 	.cb-contact textarea {
 		font-size: 16px;
 	}
-}
 
-@media only screen and (max-width: 991px){
-	.down-arrow-wrapper {
-		bottom: 32px;
+	.cb-section {
+		padding: 64px 16px;
+	}
+@media only screen and (max-width:400px){
+	.cb-title {
+		font-size: 30px;
+	}
+	.selectpicker,
+	.cb-contact input,
+	.cb-contact textarea {
+		font-size: 15px;
 	}
 }
