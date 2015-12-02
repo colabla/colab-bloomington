@@ -29,18 +29,6 @@ a:active {
 	text-align: center;
 }
 
-.cb-button {
-	padding: 24px 40px;
-	font-size: 28px;
-	border: 2px solid #fff;
-	color: #fff;
-	display: inline-block;
-}
-
-.cb-button:hover {
-	color: #fff;
-}
-
 .cb-img {
 	width: 100%;
 	height: auto;
@@ -141,6 +129,34 @@ a:active {
 .cb-title-sub a {
 	color: #F7D54A;
 	font-weight: 700;
+}
+
+.cb-button {
+	position: relative;
+	padding: 24px 40px;
+	font-size: 28px;
+	border: 2px solid #fff;
+	color: #fff;
+	display: inline-block;
+}
+
+.cb-button:hover {
+	color: #fff;
+}
+
+.cb-button-bg {
+	z-index: 2;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #F7D54A;
+	opacity: 0.2;
+}
+
+.cb-button-bg:hover{
+	opacity: 0.5;
 }
 
 .down-arrow-wrapper {
