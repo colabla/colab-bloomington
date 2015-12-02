@@ -145,7 +145,7 @@ a:active {
 
 .down-arrow-wrapper {
 	position: absolute;
-	bottom: 8%;
+	bottom: 64px;
 	left: 0;
 	right: 0;
 	margin: auto;
@@ -153,8 +153,8 @@ a:active {
 
 .down-arrow {
 	width: 8%;
-	min-width: 32px;
-	max-width: 64px;
+	min-width: 16px;
+	max-width: 48px;
 	display: inline-block;
 	height: auto;
 }
@@ -325,5 +325,11 @@ a:active {
 	.cb-contact input,
 	.cb-contact textarea {
 		font-size: 16px;
+	}
+}
+
+@media only screen and (max-width: 991px){
+	.down-arrow-wrapper {
+		bottom: 32px;
 	}
 }
