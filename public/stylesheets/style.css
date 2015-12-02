@@ -52,6 +52,23 @@ a:active {
 	padding: 0 8px;
 }
 
+.cb-bottom-tab {
+	z-index: 1050;
+	position: fixed;
+	bottom: 0;
+	right: 30px;
+	color: #fff;
+	background-color: #7f110b; 
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding: 8px;
+}
+
+.cb-bottom-tab img {
+	padding: 0 8px;
+	margin-top: -4px;
+}
+
 /* ************** */
 /* BEGIN MAIN NAV */
 /* ************** */
