@@ -247,8 +247,9 @@ a:active {
 }
 
 .section-img {
-	width: auto;
-	height: 100%;
+	width: 100%;
+	height: auto;
+	max-width: 300px;
 	padding: 32px 0;
 }
 
