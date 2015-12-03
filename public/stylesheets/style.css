@@ -280,6 +280,7 @@ a:active {
 	background-repeat: no-repeat;
 	background-position: center bottom;
 	background-size: cover;
+	min-height: 650px;
 }
 
 .cb-contact-filter {
@@ -311,6 +312,13 @@ a:active {
 	padding-bottom: 32px;
 	font-weight: 700;
 	letter-spacing: -2px;
+}
+
+.cb-contact-error {
+	display: none;
+	padding-top: 32px;
+	color: red;
+	font-size: 22px;
 }
 
 /* ****************** */
