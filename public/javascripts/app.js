@@ -1,6 +1,13 @@
 $(document).ready(function(){
 	var FIXED_NAV_HEIGHT = $(document).width() < 768? 0 : 96;
 
+	// Fix landing page height
+	var windowHeight = $(window).height();
+	if(windowHeight < 800){
+		windowHeight = windowHeight.toString() + 'px';
+		$('.landing-main-img').css('height', windowHeight);
+	}
+
 	// Smooth scroll
 	$(function() {
 		$('a[href*=#]:not([href=#])').click(function() {
