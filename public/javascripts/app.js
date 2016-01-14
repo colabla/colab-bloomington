@@ -24,15 +24,29 @@ $(document).ready(function(){
 		});
 	});
 
-	// Show/hide fixed navbar
-	$(document).on('scroll', function(){
-		var dFromTop = $(document).scrollTop();
+	var handleNavbar = function(dFromTop){
 		var landingHeight = $('.landing-main').height();
 		if(dFromTop >= (landingHeight - FIXED_NAV_HEIGHT)){
 			$('.cb-fixed-nav').css('top', 0)
 		} else {
 			$('.cb-fixed-nav').css('top', 0 - FIXED_NAV_HEIGHT);
 		}
+	};
+
+	var handleSectionImages = function(dFromTop) {
+		$('.section-img').each(function(i, img){
+			var top = $(img).offset().top;
+			if((top - 300) < dFromTop) {
+				$(img).addClass('saturate');
+			}
+		});
+	};
+
+	// Show/hide fixed navbar
+	$(document).on('scroll', function(){
+		var dFromTop = $(document).scrollTop();
+		handleNavbar(dFromTop);
+		handleSectionImages(dFromTop);
 	});
 
 	// change fixed nav link color from rgba(44,44,44,0.4) to rgba(44,44,44,1)

@@ -1,5 +1,9 @@
 # Colab Bloomington Site
 
+### To Run:
+
+**node bin/www** in project root.
+
 ### To Do:
 
 1. Adjust for better display on lower-resolution screens.
