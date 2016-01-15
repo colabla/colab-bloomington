@@ -116,7 +116,7 @@ a:active {
 }*/
 
 .cb-fixed-nav .landing-main-nav ul > li > a.cb-button {
-	box-shadow: 0px 1px 2px rgba(0,0,0,0.2), 0 1px 2px rgba(0,0,0,0.8);
+	/*box-shadow: 0px 1px 2px rgba(0,0,0,0.2), 0 1px 2px rgba(0,0,0,0.8);*/
 	padding: 16px 32px;
 	color: #fff;
 	background-color: rgba(77,219,162,1);
@@ -125,9 +125,9 @@ a:active {
 	transition: all 0.3s ease-in-out;
 }
 
-.cb-fixed-nav .landing-main-nav ul > li > a.cb-button:hover {
+/*.cb-fixed-nav .landing-main-nav ul > li > a.cb-button:hover {
 	box-shadow: 0px 1px 2px rgba(0,0,0,0.2), 0 2px 4px rgba(0,0,0,0.8);
-}
+}*/
 
 /* ************ */
 /* END MAIN NAV */
@@ -195,7 +195,7 @@ a:active {
 }
 
 .landing-main-nav ul > li > a:hover {
-	color: rgba(77,219,162,1);
+	color: #c3d7ee;
 }
 
 .cb-title {
@@ -239,14 +239,14 @@ a:active {
 }
 
 .hover-button {
-	box-shadow: 0px 2px 3px rgba(0,0,0,0.2), 0 2px 6px rgba(0,0,0,0.8);
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
 
 .hover-button:hover {
-	box-shadow: 0 6px 6px rgba(0,0,0,0.2), 0 3px 9px rgba(0,0,0,0.8)
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 .cb-button-bg {
@@ -315,9 +315,9 @@ a:active {
 	padding: 32px 0;
 	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
-	-webkit-transition: all 0.5s ease-in-out;
-	-moz-transition: all 0.5s ease-in-out;
-	transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.85s ease-in-out;
+	-moz-transition: all 0.85s ease-in-out;
+	transition: all 0.85s ease-in-out;
 }
 
 .section-img.saturate {
@@ -395,6 +395,13 @@ a:active {
 	border: 0;
 	border-radius: 0;
 }
+
+.btn-default:hover,
+.btn-default:focus {
+		background-color: #fff;
+		color: inherit;
+}
+
 .bootstrap-select>.btn {
 	padding: 15px 15px;
 	letter-spacing: -1px;
@@ -411,7 +418,7 @@ a:active {
 	color: #333;
 }
 
-.bootstrap-select .caret{
+.bootstrap-select .caret {
 	float:right;
 	border-top: 11px solid rgba(114,114,114,0.5);
 	border-right: 11px solid transparent;
@@ -420,6 +427,11 @@ a:active {
 	margin-top:10px;
 	margin-right:10px;
 }
+
+.bootstrap-select.open .caret {
+	border-top: 11px solid #333;
+}
+
 .selectpicker,
 .btn-group,
 .bootstrap-select{
@@ -501,6 +513,7 @@ a:active {
 
 	.cb-title-sub {
 		font-size: 16px;
+		padding-bottom: 40px;
 	}
 
 	.selectpicker,
@@ -510,7 +523,7 @@ a:active {
 	}
 }
 
-@media only screen and (max-width:358px){
+@media only screen and (max-width: 358px) {
 	.cb-title {
 		font-size: 26px;
 	}
@@ -525,5 +538,15 @@ a:active {
 	.cb-button {
 		padding: 14px 28px;
 		font-size: 20px;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	.cb-title {
+		font-size: 2.5rem;
+	}
+
+	.cb-title-sub {
+		font-size: 1.75rem;
 	}
 }

@@ -36,7 +36,7 @@ $(document).ready(function(){
 	var handleSectionImages = function(dFromTop) {
 		$('.section-img').each(function(i, img){
 			var top = $(img).offset().top;
-			if((top - 300) < dFromTop) {
+			if((top - 450) < dFromTop) {
 				$(img).addClass('saturate');
 			}
 		});
