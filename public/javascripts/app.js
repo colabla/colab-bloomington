@@ -24,6 +24,15 @@ $(document).ready(function(){
 		});
 	});
 
+	var timer;
+	$('.down-arrow').on('click', function(){
+		clearTimeout(timer);
+		$(this).addClass('animated bounceOutDown');
+		timer = setTimeout(function(){
+			$('.down-arrow').removeClass('animated bounceOutDown');
+		}, 2000);
+	});
+
 	var handleNavbar = function(dFromTop){
 		var landingHeight = $('.landing-main').height();
 		if(dFromTop >= (landingHeight - FIXED_NAV_HEIGHT)){
