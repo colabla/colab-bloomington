@@ -194,10 +194,6 @@ a:active {
 	transition: all 0.2s;
 }
 
-.landing-main-nav ul > li > a:hover {
-	color: #c3d7ee;
-}
-
 .cb-title {
 	color: #fff;
 	font-weight: 700;
@@ -232,6 +228,10 @@ a:active {
 	border: 2px solid #fff;
 	color: #fff;
 	display: inline-block;
+}
+
+.cb-button-translucent {
+	background-color: rgba(255,255,255,0.1);
 }
 
 .cb-button:hover {
@@ -362,9 +362,9 @@ a:active {
 .cb-input {
 	resize: none;
 	margin-bottom: 48px;
-	-webkit-box-shadow: inset -5px -5px 5px -5px rgba(51,51,51,1);
-	-moz-box-shadow: inset -5px -5px 5px -5px rgba(51,51,51,1);
-	box-shadow: inset -5px -5px 5px -5px rgba(51,51,51,1);
+	-webkit-box-shadow: inset -5px -5px 3px -5px rgba(0,0,0,0.6);
+	-moz-box-shadow: inset -5px -5px 3px -5px rgba(0,0,0,0.6);
+	box-shadow: inset -5px -5px 3px -5px rgba(0,0,0,0.6);
 }
 
 .cb-input .dropdown-menu {
