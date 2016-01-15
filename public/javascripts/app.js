@@ -96,7 +96,7 @@ $(document).ready(function(){
 		var body = {
 			name : name,
 			email : email,
-			position : position.join('. '),
+			position : position,
 			description : description
 		};
 
