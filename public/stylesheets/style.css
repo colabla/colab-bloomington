@@ -171,6 +171,13 @@ a:active {
 	bottom: 0;
 }
 
+.landing-main-content ul > li > a:hover {
+	color: #ddd;
+	-webkit-transition: all 0.35s;
+	-moz-transition: all 0.35s;
+	transition: all 0.35s;
+}
+
 .landing-main-nav {
 	padding: 4% 0;
 }
@@ -192,10 +199,6 @@ a:active {
 	-webkit-transition: all 0.2s;
 	-moz-transition: all 0.2s;
 	transition: all 0.2s;
-}
-
-.landing-main-nav ul > li > a:hover {
-	color: #c3d7ee;
 }
 
 .cb-title {
