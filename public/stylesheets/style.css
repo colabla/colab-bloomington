@@ -210,7 +210,7 @@ a:active {
 }
 
 .cb-title-sub a {
-	color: rgba(247, 213, 74, 0.8);
+	color: rgba(255, 252, 25, 0.8);
 	font-weight: 700;
 	-webkit-transition: all 0.2s;
 	-moz-transition: all 0.2s;
@@ -218,7 +218,7 @@ a:active {
 }
 
 .cb-title-sub a:hover {
-	color: rgba(247, 213, 74, 1);
+	color: rgba(255, 252, 25, 1);
 }
 
 .cb-button {
