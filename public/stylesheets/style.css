@@ -557,3 +557,9 @@ a:active {
 		font-size: 1.75rem;
 	}
 }
+
+@media (max-height: 650px) {
+	.cb-title {
+		padding: 0 0 4% 0;
+	}
+}
