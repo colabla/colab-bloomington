@@ -493,6 +493,11 @@ a:active {
 	color:rgba(114,114,114,0.5);
 }
 /* ****************************** */
+@media only screen and (max-height: 650px) {
+	.cb-title {
+		padding: 0 0 4% 0;
+	}
+}
 @media only screen and (max-width:991px){
 	.down-arrow-wrapper {
 		bottom: 32px;
@@ -506,6 +511,14 @@ a:active {
 		font-size: 16px;
 	}
 
+	.section-img {
+		padding: 0;
+	}
+
+	.cb-section-text {
+		font-size: 18px;
+	}
+
 	.cb-section {
 		padding: 32px 16px;
 	}
@@ -516,6 +529,14 @@ a:active {
 
 	.cb-button {
 		font-size: 22px;
+	}
+
+	.cb-input {
+		margin-bottom: 24px;
+	}
+
+	.cb-section-text {
+		padding: 0;
 	}
 
 	.cb-title-sub {
@@ -555,11 +576,5 @@ a:active {
 
 	.cb-title-sub {
 		font-size: 1.75rem;
-	}
-}
-
-@media (max-height: 650px) {
-	.cb-title {
-		padding: 0 0 4% 0;
 	}
 }
